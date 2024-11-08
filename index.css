@@ -1,0 +1,84 @@
+.mainContainer {
+  border: 1px solid black;
+  height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerContainer {
+}
+.textColor {
+  color: #ff6b82;
+}
+.bgColor {
+  background-color: #ff6b82;
+}
+
+.textContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.line {
+  border: 1px solid #c8c8c8;
+  width: 92px;
+}
+.headingText {
+  font-size: 20px;
+  word-spacing: 3px;
+  font-weight: bold;
+}
+
+.selectSub {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.firstUnit {
+  border: 1px solid #c8c8c8;
+  padding: 20px;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ff6b82;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+
+  position: relative;
+}
+
+input[type="radio"]::after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background-color: #ff6b82;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease;
+}
+
+input[type="radio"]:checked::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.unitText {
+  font-weight: bold;
+}
+.offText {
+  background-color: #ff6b82;
+  font-size: 11px;
+  padding: 3px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  color: white;
+}
